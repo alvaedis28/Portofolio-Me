@@ -129,3 +129,10 @@ const observer = new MutationObserver(function(mutations) {
 });
 
 observer.observe(document.body, { attributes: true });
+
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navMenu = document.getElementById("navMenu");
+
+hamburgerBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
